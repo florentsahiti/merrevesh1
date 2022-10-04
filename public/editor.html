@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; font-family: Poppins;">
+
+
+    <div
+        style="padding:10px;display:flex; justify-content: center; flex-direction: column; width:50%  ; border:2px solid ; margin: 10px;">
+        <div class="banner">
+            <input type="file" accept="image/*" id="banner-upload" hidden>
+            <label for="banner-upload" class="banner-upload-btn"><img src="../img/upload.jpg" alt="upload banner">
+                <label>
+        </div>
+
+        <div class="blog">
+            <textarea type="text" class="title" placeholder="Blog Title..."></textarea>
+            <textarea type="text" class="article" placeholder="Start Writing here..."></textarea>
+        </div>
+
+        <div class="blog-options">
+            <button class="btn dark publish-btn">publish</button>
+
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+
+    <script src="../js/firebase.js"></script>
+    <script src="../js/editor.js"></script>
+
+</body>
+
+</html>

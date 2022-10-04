@@ -1,0 +1,29 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* height: 2000px; */
+    font-style: normal;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+}
+
+.navbar .nav-item {
+    padding: 10px 20px;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #333f7c;
+    font-weight: 600;
+
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+}
