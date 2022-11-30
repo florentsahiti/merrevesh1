@@ -106,30 +106,16 @@
             <h1 class="heading-primary" style=" color: #041D31;font-size: 5rem;">
                 Eksploro </h1>
         </div>
+
         <div class="container grid grid--3-cols" style="padding: 1% 0 3% 0;">
-            <div class="feature">
-                <a href="/posts">
-                    <img src="img/dygishta.png" style="width: 88%;">
-                </a>
-                <a href="/posts" class="al">
-                    Punë vullnetare
-                </a>
+            <div class="feature" id="pv" style=" background-image: url(img/dygishta.png);">
+                <p>Punë vullnetare</p>
             </div>
-            <div class="feature">
-                <a href="/posts">
-                    <img src="img/yllat.png" style="width: 100%;">
-                </a>
-                <a href="/posts" class="al">
-                    Evente
-                </a>
+            <div class="feature" id="pv" style=" background-image: url(img/yllat.png);">
+                <p>Evente</p>
             </div>
-            <div class="feature">
-                <a href="/posts">
-                    <img src="img/event.png" style="width: 100%;">
-                </a>
-                <a href="/posts" class="al">
-                    Grante
-                </a>
+            <div class="feature" id="pv" style=" background-image: url(img/event.png);">
+                <p>Grante</p>
             </div>
         </div>
 
@@ -156,7 +142,6 @@
                 <a href="#" class="footer-logo">
                     <img style="width: 50%;" alt="HealthCorner logo" src="img/logo.png" />
                 </a>
-
                 <ul class="social-links">
                     <li>
                         <a class="footer-link" href="#">
@@ -212,23 +197,42 @@
                     <li><a class="footer-link" href="/admin">Behu Pjese e jona</a></li>
                 </ul>
             </nav>
-
         </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
-
-
     <script src="js/firebase.js"></script>
     <script src="js/home.js"></script>
     <script src="js/nav.js"></script>
+    <style>
+        .container {
+            width: 80%;
+        }
 
+        #pv {
+            /* background-image: url(img/dygishta.png); */
+            background-repeat: no-repeat;
+            box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+            background-size: contain;
+            height: 50vh;
+            border: 10px solid #550059;
+            border-radius: 5%;
+        }
 
+        #pv:hover {
+            transform: translateY(-1.2rem);
+            box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+        }
 
+        #pv p {
+            margin-top: 5px;
+            font-size: 20px;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
