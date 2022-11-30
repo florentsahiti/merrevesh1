@@ -190,6 +190,12 @@
     width: 15%;
 }
 
+.feature {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
 
 .feature img {
     /* paddi75g-bottom: 1%; */
@@ -681,11 +687,11 @@
 .footer-link:visited {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #767676;
+    color: white;
     transition: all 0.3s;
 }
 
 .footer-link:hover,
 .footer-link:active {
-    color: #555;
+    color: white
 }
