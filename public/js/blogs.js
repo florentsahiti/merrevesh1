@@ -24,8 +24,8 @@ const createBlogForUsers = (blog) => {
             <span class="tag tag--vegan" style="background-color:#87489c; color:white;  text-transform: lowercase; padding:5px">${data.autori}</span>
             <span class="tag " style="border:3px solid#87489c;  text-transform: lowercase; padding:5px ; margin-left:25px" >${data.date}</span>
         </div>
-        <p class="meal-title"> ${data.title.substring(0, 100) + '...'}</p>
-        <p>${data.article.substring(0, 200) + '...'}</p>
+        <p class="meal-title"> ${data.title.substring(0, 100)}</p>
+        <p>${data.article.substring(0, 200)}</p>
         <span class="tag tag--paleo" style="background-color:#87489c; color:white; text-transform:lowercase">${data.category}</span>
         <span class="tag " style="border:2px solid #87489c; text-transform:lowercase">${data.scategory}</span>
         </div>
