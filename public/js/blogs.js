@@ -21,7 +21,7 @@ const createBlogForUsers = (blog) => {
     <img src="${data.bannerImage}" class="meal-img" alt="Avocado Salad" />
     <div class="meal-content">
         <div class="meal-tags">
-            <span class="tag tag--vegan" style="background-color:#87489c; color:white;  text-transform: lowercase; padding:5px">${data.author}</span>
+            <span class="tag tag--vegan" style="background-color:#87489c; color:white;  text-transform: lowercase; padding:5px">${data.autori}</span>
             <span class="tag " style="border:3px solid#87489c;  text-transform: lowercase; padding:5px ; margin-left:25px" >${data.date}</span>
         </div>
         <p class="meal-title"> ${data.title.substring(0, 100) + '...'}</p>
