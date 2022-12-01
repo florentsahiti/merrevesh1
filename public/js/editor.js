@@ -52,7 +52,7 @@ db.collection("blogs").get().then(snap => {
 
 publishBtn.addEventListener('click', () => {
     //access firestore with db variable
-    db.collection("blogs").doc("a" + idD).set({
+    db.collection("blogs").doc().set({
         number: idD,
         date: dateField.value,
         title: blogTitleField.value,
