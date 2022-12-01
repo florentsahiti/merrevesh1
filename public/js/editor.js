@@ -62,7 +62,8 @@ publishBtn.addEventListener('click', () => {
         category: categoryFeild.value,
         scategory: scategoryFeild.value,
         publishedAt: "",
-        author: authorFeild.value
+        author: auth.currentUser.email.split("@")[0],
+        autori: authorFeild.value
 
     }).then(() => {
         location.href = `/posts`;
