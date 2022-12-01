@@ -1,6 +1,7 @@
 const blogTitleField = document.getElementById('title');
 const articleFeild = document.getElementById('article');
 const categoryFeild = document.getElementById("category");
+const authorFeild = document.getElementById("autori");
 const scategoryFeild = document.getElementById("subcategory");
 const dateField = document.getElementById("data");
 //banner
@@ -57,10 +58,11 @@ publishBtn.addEventListener('click', () => {
         title: blogTitleField.value,
         article: articleFeild.value,
         bannerImage: bannerPath,
+
         category: categoryFeild.value,
         scategory: scategoryFeild.value,
         publishedAt: "",
-        author: auth.currentUser.email.split("@")[0]
+        author: authorFeild.value
 
     }).then(() => {
         location.href = `/posts`;
