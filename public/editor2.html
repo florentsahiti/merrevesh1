@@ -30,49 +30,52 @@
 			<div class="right">
 				<h2>Shto diçka të re</h2>
 				<input type="text" class="title field" id="title" placeholder="Titulli" required>
-				<label for="birthdate">Data e mbajtjes </label>
-
-
+				<input type="text" class="title field" id="autori" name="author" placeholder="Organizatori" required>
 				<input type="date" id="data" class="field" name="birthdate" min="1917-01-01" id="birthdate" required>
-
-
-				<label for="category">Zgjedh kategorine</label>
-				<br />
 				<select name="category" class="field" id="category" required>
 					<option value="" label="Zgjedh Kategorinë" selected="selected">Select a country … </option>
 					<option value="event">Event</option>
 					<option value="pune vullnetare">Pune Vullnetare</option>
 					<option value="grant">Grante</option>
-
-
-
-
 				</select>
-				<label for="subcategory">Lloji:
-				</label>
-				<br />
 				<select name="subcategory" class="field" id="subcategory" required>
-					<!-- https://www.freeformatter.com/iso-country-list-html-select.html -->
 					<option value="" label="Zgjedh llojin" selected="selected">Zgjedh llojin </option>
-					<option value="Muzike">Muzik</option>
 					<option value="Art">Art</option>
-					<option value="Kulture">Kulture</option>
-					<option value="Biznis">Biznis</option>
-
+					<option value="Ekspozitë">Ekspozitë</option>
+					<option value="Performancë">Performancë</option>
+					<option value="Festival">Festival</option>
+					<option value="Koncert">Koncert</option>
+					<option value="Muzikë">Muzikë</option>
+					<option value="Teatër">Teatër</option>
+					<option value="Shfaqje">Shfaqje</option>
+					<option value="Argëtim">Argëtim</option>
+					<option value="Panair">Panair</option>
+					<option value="Punëtori">Punëtori</option>
+					<option value="Trajnim">Trajnim</option>
+					<option value="Kamp">Kamp</option>
+					<option value="Gara">Gara</option>
+					<option value="Projekt">Projekt</option>
+					<option value="Bursa">Bursa</option>
+					<option value="Aktivizëm">Aktivizëm</option>
+					<option value="Konferencë">Konferencë</option>
+					<option value="Takim">Takim</option>
+					<option value="Virtuale">Virtuale</option>
+					<option value="Shëndet">Shëndet</option>
+					<option value="Mjedis">Mjedis</option>
+					<option value="Sport">Sport</option>
+					<option value="Shtëpia e Rinisë">Shtëpia e Rinisë</option>
+					<option value="Bibloteka">Bibloteka</option>
 				</select>
-
-
 				<textarea placeholder="Informatat më të detajuara; lokacioni;kontakti" class="field" required
 					id="article"></textarea>
-
 				<input type="file" class="form-control" id="banner-upload" required />
 
 				<button class="butoni publish-btn">Postoje</button>
 			</div>
 		</div>
 	</div>
-<style>
-		body{
+	<style>
+		body {
 			height: max-content;
 		}
 	</style>
