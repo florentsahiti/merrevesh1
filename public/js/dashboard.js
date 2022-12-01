@@ -53,7 +53,7 @@ const createBlogForAdmin = (blog) => {
     console.log(blog.id)
     blogSection.innerHTML += `
     <div class="meal" id="${blog.id}">
-    <img src="${data.bannerImage}" class="meal-img" alt="Avocado Salad" />
+    <img src="${data.bannerImage}" class="meal-img" alt="..." />
     <div class="meal-content">
         <div class="meal-tags">
             <span class="tag tag--vegan" style="background-color:#87489c; color:white;  text-transform: lowercase; padding:5px">${data.autori}</span>
